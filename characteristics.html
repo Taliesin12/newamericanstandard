@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unleashing EdTech</title>
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <header>
+    <div class="headleft">
+      <img src="./resources/images/Editedcolor.png" alt="">
+    </div>
+    <div class="headright">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="characteristics.html">Characteristics</a>
+        <a href="info.html">Information</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="organization.html">Organization</a>
+
+      </nav>
+    </div>
+  </header>
+  <body>
+
+      <div class="slideshow" >
+        <div class="myslides">
+          <img  src="./resources/images/board-game-challenge-checkmate-51055.jpg" >
+
+          <h3>Michael Crow</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/blur-book-browse-256546.jpg" >
+          <h3>Clayton Christiansen</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/Editedcolor.png" >
+          <h3>Sal Khan</h3>
+        </div>
+
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+          }
+        </script>
+
+      </div>
+
+      <div class="info" id="quality">
+        <h3>Quality</h3>
+      </div>
+      <div class="info" id="time">
+        <h3>Time</h3>
+      </div>
+      <div class="info" id="modular">
+        <h3>Modular</h3>
+      </div>
+      <div class="info" id="standard">
+        <h3>Standard</h3>
+      </div>
+      <div class="info" id="security">
+        <h3>Security</h3>
+      </div>
+      <div class="info" id="gradual">
+        <h3>Gradual</h3>
+      </div>
+    </div>
+  </body>
+</html>

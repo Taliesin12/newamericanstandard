@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New American Standard</title>
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <header>
+    <div class="headleft">
+      <img src="./resources/images/Editedcolor.png" alt="">
+    </div>
+    <div class="headright">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="characteristics.html">Characteristics</a>
+        <a href="info.html">Information</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="organization.html">Organization</a>
+
+      </nav>
+    </div>
+  </header>
+  <body>
+
+    <div class="slideshow" >
+        <div class="myslides">
+          <img  src="./resources/images/board-game-challenge-checkmate-51055.jpg" >
+
+          <h3>Michael Crow</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/blur-book-browse-256546.jpg" >
+          <h3>Clayton Christiansen</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/Editedcolor.png" >
+          <h3>Sal Khan</h3>
+        </div>
+
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 10000); // Change image every 2 seconds
+          }
+        </script>
+
+
+
+
+      </div>
+    <div class="homebox">
+      <h2>Characteristics</h2>
+      <div class="boxguts">
+        <div class="boxleft">
+          <img src="./resources/images/abandoned-architecture-blackboard-752395.jpg" alt="">
+        </div>
+        <div class="boxright">
+          <div class="boxdash">
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#quality">Quality</a> </h3>
+            </div>
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#quality">Time</a></h3>
+            </div>
+          </div>
+          <div class="boxdash">
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#quality">Modular</a></h3>
+            </div>
+          </div>
+          <div class="boxdash">
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#quality">Standard</a></h3>
+
+            </div>
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#quality">Security</a></h3>
+            </div>
+          </div>
+          <div class="boxdash">
+            <div class="boxdot">
+              <h3><a href="./characteristics.html#gradual">Gradual</a></h3>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Information</h3>
+      <div class="infobar">
+        <div class="boxdot">
+          <h4><a href="info.html#lesson">lesson taught</a> </h4>
+        </div>
+        <div class="boxdot">
+          <h4><a href="info.html#learned">lesson learned</a> </h4>
+        </div>
+        <div class="boxdot">
+          <h4><a href="info.html#time">Time</a> </h4>
+        </div>
+        <div class="boxdot">
+          <h4><a href="info.html#skill">Skill Demonstrated</a> </h4>
+        </div>
+      </div>
+      <h3>Results/Algorithm</h3>
+      <div class="infobar">
+        <div class="boxdot">
+          <h4>childs learning style/interest</h4>
+        </div>
+        <div class="boxdot">
+          <h4>effecacy of lesson</h4>
+        </div>
+      </div>
+    </div>
+    <div class="homebox">
+      <h2>Benefits</h2>
+      <div class="boxguts">
+        <div class="boxleft">
+          <img src="./resources\images\board-game-challenge-checkmate-51055.jpg" alt="">
+        </div>
+        <div class="boxright">
+          <div class="boxr2">
+            <div class="boxnode">
+              <h3><a href="benefits.html#students">The Student</a></h3>
+            </div>
+            <div class="boxnode">
+              <h3><a href="benefits.html#schools">The Schools</a> </h3>
+            </div>
+          </div>
+          <div class="boxr2">
+            <div class="boxnode">
+              <h3><a href="benefits.html#parents">The Parents</a> </h3>
+            </div>
+            <div class="boxnode">
+              <h3><a href="benefits.html#economy">The Economy</a> </h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Organization</h3>
+      <div class="boxleft">
+        <h3>Philosophy</h3>
+        <h4>We want to serve society and improve the world by improving the lives of individuals.</h4>
+      </div>
+    </div>
+
+  </body>
+  <footer><img src="./resources/images/Editedcolor.png" alt=""></footer>
+</html>

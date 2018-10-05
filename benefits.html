@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unleashing EdTech</title>
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <header>
+    <div class="headleft">
+      <img src="./resources/images/Editedcolor.png" alt="">
+    </div>
+    <div class="headright">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="characteristics.html">Characteristics</a>
+        <a href="info.html">Information</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="organization.html">Organization</a>
+
+      </nav>
+    </div>
+  </header>
+  <body>
+
+      <div class="slideshow" >
+        <div class="myslides">
+          <img  src="./resources/images/board-game-challenge-checkmate-51055.jpg" >
+
+          <h3>Michael Crow</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/blur-book-browse-256546.jpg" >
+          <h3>Clayton Christiansen</h3>
+        </div>
+        <div class="myslides">
+          <img src="./resources/images/Editedcolor.png" >
+          <h3>Sal Khan</h3>
+        </div>
+
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("myslides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+      </script>
+    </div>
+      <div class="homebox" id="students">
+        <h3>Benefits for Students</h3>
+        <div class="boxguts">
+          <div class="boxleft">
+
+          </div>
+          <div class="boxright">
+            <h4>Fixed Quality</h4>
+            <h4>Variable Time</h4>
+            <h4>Be better able to plan life.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="homebox" id="schools">
+        <h3>Benefits for Schools</h3>
+        <div class="boxguts">
+          <div class="boxleft">
+
+          </div>
+          <div class="boxright">
+            <h4>able to implement innovation</h4>
+            <h4>Save Money</h4>
+            <h4>Save Time</h4>
+            <h4>Teachers get better pay</h4>
+            <h4>Students choose this institution</h4>
+          </div>
+        </div>
+      </div>
+      <div class="homebox" id="parents">
+        <h3>Benefits to Parents</h3>
+        <div class="boxguts">
+          <div class="boxleft">
+
+          </div>
+          <div class="boxright">
+            <h4>children get better education</h4>
+            <h4>less homework</h4>
+            <h4>Able to plan school around their schedule</h4>
+          </div>
+        </div>
+      </div>
+      <div class="homebox" id="economy">
+        <h3>Benefits for Economy</h3>
+        <div class="boxguts">
+          <div class="boxleft">
+
+          </div>
+          <div class="boxright">
+            <h4>Confidence for employers </h4>
+            <h4>Todays Education is tomorrow's Economy</h4>
+            <h4>Ease Finding employees</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
