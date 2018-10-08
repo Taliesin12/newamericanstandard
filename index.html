@@ -22,42 +22,46 @@
   </header>
   <body>
 
-    <div class="slideshow" >
-        <div class="myslides">
-          <img  src="./resources/images/board-game-challenge-checkmate-51055.jpg" >
+    <div class="info">
+      <h1>Changing the Education system to fit todays and tomorrow's life style is imperative. We need to change the way we measure learning. We need a new standard of communication. The letter grade system needs to be replaced by a system that prioritizes <a href="characteristics.html#quality">quality</a> over <a href="characteristics.html#time">batch method of teachings</a>. </h1>
 
-          <h3>Michael Crow</h3>
-        </div>
-        <div class="myslides">
-          <img src="./resources/images/blur-book-browse-256546.jpg" >
-          <h3>Clayton Christiansen</h3>
-        </div>
-        <div class="myslides">
-          <img src="./resources/images/Editedcolor.png" >
-          <h3>Sal Khan</h3>
-        </div>
+    </div>
 
-        <script>
-          var myIndex = 0;
-          carousel();
-
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("myslides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 10000); // Change image every 2 seconds
-          }
-        </script>
-
-
-
-
+    <div class="banner">
+      <img src="./resources/images/blocks.jpg" alt="">
+      <div class="bnrright">
+        <h1>The Domino effect to change all of education</h1>
+        <p>So many people are </p>
+        <button type="button" class="bnrbtn">Start Here</button>
       </div>
+    </div>
+
+    <div class="banner">
+      <img src="./resources/images/tempe-campus.jpg" alt="">
+      <div class="bnrright">
+        <h1>Learn Something New </h1>
+        <p>Why would I put latin here?</p>
+        <button type="button" class="bnrbtn">gonna work!</button>
+      </div>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("banner");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "flex";
+        setTimeout(carousel, 5000); // Change image every 10 seconds
+      }
+    </script>
+
     <div class="homebox">
       <h2>Characteristics</h2>
       <div class="boxguts">

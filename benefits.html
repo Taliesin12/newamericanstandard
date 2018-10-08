@@ -22,40 +22,6 @@
   </header>
   <body>
 
-      <div class="slideshow" >
-        <div class="myslides">
-          <img  src="./resources/images/board-game-challenge-checkmate-51055.jpg" >
-
-          <h3>Michael Crow</h3>
-        </div>
-        <div class="myslides">
-          <img src="./resources/images/blur-book-browse-256546.jpg" >
-          <h3>Clayton Christiansen</h3>
-        </div>
-        <div class="myslides">
-          <img src="./resources/images/Editedcolor.png" >
-          <h3>Sal Khan</h3>
-        </div>
-
-
-        <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("myslides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}
-          x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 4000); // Change image every 2 seconds
-        }
-      </script>
-      </div>
-
       <div class="homebox" id="students">
         <h3>Benefits for Students</h3>
         <div class="boxguts">
