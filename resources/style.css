@@ -143,7 +143,8 @@ a:visited{
   height: 20em;
   font-family: Exo;
   padding: 3em;
-
+  transition:  2s;
+  transition-delay: .5s;
   }
 
   .hoverbox h4{display: none;}
