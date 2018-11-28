@@ -23,9 +23,10 @@
   <body>
 
       <div class="info" id="quality">
-        <h3>Quality</h3>
+        <h3>Quality and Time</h3>
         <div class="infobar">
-          <h4>By having quality be constant and time variable students are able to learn at their pace. This is the only way to make sure that no student is left behind. Having a standard quality allows more trust of the institution, the lessons, and the student. </h4>
+          <h4>Today’s education has time being fixed, while the quality varies. This seems backwards. At the time education was being instituted it was a fine way to do it, but in this era it is obsolete if not very harmful. This structure holds back more students than it helps. <br> <br>By allowing students to learn from tailor-made lesson plans quality will become a constant in each student’s educational experience. Also, having such reliable quality across the board allows more trust and freedom for the institution, the lessons, and the students. <br> <br>By allowing the timing of education to vary and be flexible, students will be able to learn at their pace instead of being rushed or held back. This is the only way to make sure that no student is left behind, and overall this will save time for every student because their time will be used meaningfully. If a student needs a slower or faster pace but is forced to work at an average pace their time is wasted, not to mention what an unenjoyable experience that it is—which creates unhealthy and negative associations with learning. <br> <br> Instead lets produce high quality individualized lessons, that spark a love of learning, while also allowing the students to learn at their optimal pace. This will create an enjoyable experience while also producing better results.
+          </h4>
         </div>
       </div>
       <div class="info" id="time">
@@ -38,18 +39,21 @@
       <div class="info" id="modular">
         <h3>Modular</h3>
         <div class="infobar">
-          <h4>Modularity is a crucial aspect of personalized education. learning is not a one-size-fits-all situation. defining concepts but not lesson materials allows thousands of ways to teach the same concept. This allow students to get a lesson that fits their skills, understanding, and interests better.  </h4>
-          <h4>One example of useful modularity is the lightbulb socket*. Because this lightbulb/lamp interface was defined in its dimensions and characteristics both the lamp and the socket could </h4>
-          <a href="https://www.christenseninstitute.org/interdependence-modularity/">Modularity</a>
-
+          <h4>Modularity, or the ability to be flexible and rearrangable, is a crucial aspect of personalized education. Learning is not a one-size-fits-all situation. Defining concepts but not lesson materials allows thousands of ways to teach the same concept. This then allows students to get a lesson that fits their learning style, level of understanding, skills, and interests.</h4>
         </div>
       </div>
+      <button class="collapsible">Example: The Lightbulb Socket</button>
+        <div class="content">
+          <p>Because this lightbulb/lamp interface was defined in its dimensions and characteristics both the lamp and the socket could.<a href="https://www.christenseninstitute.org/interdependence-modularity/">Modularity</a></p>
+        </div>
       <div class="info" id="standard">
         <h3>Standard</h3>
         <div class="infobar">
           <h4>Industrial standards are everywhere and the classroom is no different. A #2 pencil, the Alphabet, and Letter grades. Letter grades do not adequately convey what a student knows or doesnt know. </h4>
-          <h4>Standards build industries, win wars*, and may even last thousands of years to go from ancient Rome to affecting spaceflight. </h4>
-
+        </div>
+      <button class="collapsible">Example: Horsecarts to rockets, the Civil War</button>
+        <div class="content">
+          <p>Standards build industries, win wars*, and may even last thousands of years to go from ancient Rome to affecting spaceflight. <a href="https://www.christenseninstitute.org/interdependence-modularity/">Modularity</a></p>
         </div>
       </div>
       <div class="info" id="security">
@@ -67,5 +71,21 @@
         </div>
       </div>
     </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+    }
+  </script>
   </body>
 </html>

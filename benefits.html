@@ -31,12 +31,11 @@
           <div class="boxright">
             <div class="boxr2">
               <div class="boxnode">
-                <h3>Fixed Quality</h3>
-                <div class="boxhover">
-                  <h5>Students don't have gaps in knowledge</h5>
-                  <h5>The qualifications they have are trusted by employers</h5>
-                  <h5>have personalized education plan</h5>
+                <button class="collapsible">Open Section 1</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
+
               </div>
               <div class="boxnode">
                 <h3>Variable Time</h3>
@@ -66,6 +65,33 @@
 
         </div>
       </div>
+      <button class="collapsible">Open Section 1</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+      <button class="collapsible">Open Section 3</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+      }
+    </script>
+
       <div class="homebox" id="schools">
         <h3>Benefits for Schools</h3>
         <div class="boxguts">
