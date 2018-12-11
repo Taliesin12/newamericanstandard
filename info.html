@@ -7,13 +7,13 @@
   </head>
   <header>
     <div class="headleft">
-      <img src="./resources/images/Editedcolor.png" alt="">
+      <a href="index.html"><img src="./resources/images/Editedcolor.png" alt=""></a>
     </div>
     <div class="headright">
       <nav>
         <a href="index.html">Home</a>
         <a href="characteristics.html">Characteristics</a>
-        <a href="info.html">Information</a>
+        <a href="info.html">Data</a>
         <a href="benefits.html">Benefits</a>
         <a href="organization.html">Organization</a>
 
@@ -22,7 +22,9 @@
   </header>
   <body>
 
-
+    <div class="info">
+      <h1>Data will be collected by the organization so that it is stored and available to whatever applications the student uses. There could be an airgap between the storage and the internet so that it is not easily hacked. </h1>
+    </div>
       <div class="info" id="lesson">
         <h3>Lessons Taught</h3>
         <h4>Due to the <a href="characteristics.html#modular">modular</a> design of the standard multiple lessons can be used to teach a single concept. This means that the lessons will need to be recorded and their effecacy will need to be compared to the learning profile of the student</h4>
@@ -36,7 +38,8 @@
       <div class="info" id="skill">
         <h3>Skill Demonstrated</h3>
         <h4>Many computer programs and websites will use the standard to help teach students</h4>
-        <h4>Only certain institutions will be given the authority to say that this skill is demonstrated.</h4>
+        <h4>Only certain institutions will be given the authority to say that this skill is demonstrated. This is where the quality assurance is made. If there is no trust in this part of the organization, there is no trust in the system. This needs to be air tight. We won't tell how to do the testing so that there is innovation in the methods of having children prove their knowledge and skill. but if universities and companies are going to be able to rely on the whole system this needs to be good.</h4>
+        <h4>This is also where the organization earns its money. Free profiles for each student and teacher but for an organization to test your knowledge they need to pay money. Even if it is a small amount, the organization earns a lot of money. If all the 120k k12 schools pay only 1 dollar per day it ends up being 43.8 million a year.</h4>
       </div>
       <div class="info" id="time">
         <h3>Time</h3>
@@ -45,6 +48,9 @@
       <div class="info" id="portfolio">
         <h3>Portfolio</h3>
         <h4>Some learning will be project based and a digital copy of that can be stored in relation to the learning of the student. This could be word files, videos, software, or 3d scans of physical objects.</h4>
+      </div>
+      <div class="info" id=other>
+        <h3>Adaptability is a part of the design of the system. As need arises other critera to measure will be added to better serve the community.</h3>
       </div>
 
       <div class="homebox">
@@ -98,5 +104,69 @@
           </div>
         </div>
       </div>
+      <div class="homebox" >
+        <h3>Results in education</h3>
+        <div class="boxguts">
+          <div class="boxleft">
+              <img src="./resources/images/notpexels/parents_homework_help.jpg" alt="">
+          </div>
+          <div class="buttonbox">
+            <button class="collapsible2">Lesson Effeciency</button>
+              <div class="content2">
+                <p>Because of the <a href="characteristics.html#modular">modular</a> nature of the standard there could possibly be thousands of different lessons for one isolated concept. This could create the problem of needing to sift through the lessons to match to the learner profile.</p>
+              </div>
+            <button class="collapsible2">Aptitudes</button>
+              <div class="content2">
+                <p>Students aren’t slowed down nor sped up by the progress of other students. This eliminates testing that encourages cramming knowledge rather than retaining it, the stressful practice of finals week, and a degree of unhealthy comparisons that damage educational self-esteem and confidence. Instead they can thrive at a personalized pace.</p>
+              </div>
+            <button class="collapsible2">learning styles</button>
+              <div class="content2">
+                <p>Students won’t have any gaps in understanding that fall through the cracks—thus eliminating stress, low confidence, difficulty learning more advanced lessons, and a myriad of other issues later in life that result from educational neglect. Subjective and foggy letter grades will be replaced with clear and precise accomplishment within the curriculum.</p>
+              </div>
+            <button class="collapsible2">interests</button>
+              <div class="content2">
+                <p>Students, because the education will be customized to each individual, will be taught more efficiently. They will learn more in less time, resulting in less homework—creating a more positive experience for students and their families.</p>
+              </div>
+          </div>
+          <div class="buttonbox">
+            <button class="collapsible2">Feedback Loop</button>
+              <div class="content2">
+                <p>Having a short feedback loop is crucial for learning the effectiveness of changes to a  </p>
+              </div>
+            <button class="collapsible2">Emotional boost</button>
+              <div class="content2">
+                <p>This method of learning, which encourages a students passion while also giving them a clear map of their past, current, and future education achievements, will boost students confidence and help them to recognize and embrace their valuable potential.</p>
+              </div>
+            <button class="collapsible2">Their children will get a better education</button>
+              <div class="content2">
+                <p>The education will be truly custom-made and yet high quality across the board. Socio economic status, living location and school boundaries, or any other factors will no longer disadvantage different groups of students. Children will all have equal opportunity. And because the students get a personalized education, not only will they truly enjoy the journey of learning, but they will be more prepared for life.</p>
+              </div>
+            <button class="collapsible2">Better Life</button>
+              <div class="content2">
+                <p>This system will help students find and decide on majors, colleges, and careers with more ease as well as authentic expectations and greater security. They will be better qualified than ever before and will know better how to make good life decisions.</p>
+              </div>
+          </div>
+
+
+        </div>
+      </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsible2");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        }
+        });
+        }
+      </script>
+
+
   </body>
 </html>
