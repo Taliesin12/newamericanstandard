@@ -18,7 +18,7 @@ header {display: flex;
   .headleft{margin-left: 1em;}
 
   header a {text-decoration: none;
-    color: white;}
+    color: darkgrey;}
 
   .headright{display: flex;
     flex-direction: column;
@@ -32,7 +32,8 @@ body{display: flex;
   align-items: center;
   margin:0;}
 
-a{color: darkgrey;
+a {color: darkgrey;
+
   text-decoration: none;
 }
 
