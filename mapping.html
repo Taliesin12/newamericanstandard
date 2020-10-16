@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mapping Knowledge</title>
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <header>
+    <div class="headleft">
+      <a href="index.html"><img src="./resources/images/Editedcolor.png" alt=""></a>
+    </div>
+    <div class="headright">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="mapping.html">Mapping</a>
+        <a href="knowledge.html">Knowledge</a>
+        <a href="life.html">Life</a>
+        <a href="navigate.html">Navigate</a>
+        <a href="how.html">How</a>
+
+      </nav>
+    </div>
+  </header>
+  <body>
+
+    <div class="bg-image"> </div>
+
+
+    <div class="bg-text">
+      <h1>Mapping</h1>
+      <h3>Defining concepts and illustrating their relationship to other concepts</h3>
+    </div>
+
+
+      <div class="info" id="map">
+        <h3>What do I mean by map?</h3>
+        <div class="infobar">
+          <h4>An education map can be made by simply defining individual concepts and their connections to other concepts. Creating a network of concepts will allow students to learn in a way that is tailor-made for them. This “map” will allow different institutions and applications to accurately communicate to each other what has already been taught, and what needs to be taught, to each unique individual. Parents, teachers, schools, museums and EdTech software will use the map to help navigate a student's individual learning.
+            <br><br>Imagine a weather display at a science museum. When a third grade student approaches the display it begins to show a simple overview that is exactly where that individual student is in their learning. Next, a junior in highschool comes up, and now what is displayed to this student is detailed information about weather patterns that they have yet to learn or grasp.
+            <br><br> Having a more detailed and accurate map of knowledge will help people know how to get from one place educationally to another place. Recording what concepts the student has mastered gives a more detailed description of where they are educationally. Knowing where the student is and where they need to go could allow teachers and educational software to create individualized lesson plans designed specifically for the student. It also allows student led education because they can go outside and discover things in the real world. For example, a parent could help their child find information through a learning software about that interesting frog they saw that afternoon. The student could then learn all sorts of details about it from the software and that would be automatically added to the map. <br> <br>Mapping is an essential characteristic of society.
+            <br><br>Having a map allows us to know where we are, where we want to go, and how to get there.
+          </h4>
+        </div>
+      </div>
+      <button class="collapsible">Example: Mastery Based Learning</button>
+        <div class="content">
+          <p>This is a really great example seriously, watch this <a href="https://www.youtube.com/watch?v=-MTRxRO5SRA" target="_blank">video</a>.</p>
+        </div>
+
+      </div>
+      <div class="info" id="modular">
+        <h3>Standard of Communication</h3>
+        <div class="infobar">
+          <h4>Standard of Communication
+            <br><br>Standards are used in every industry and <a href="https://www.bloomberg.com/professional/blog/how-standards-organizations-work/">are critical to the benefit of those industries.</a> From industrial age manufacturing to the internet and to the hyperloop, standards are some of the first things that need to be decided. In fact having <a href="https://www.battlefields.org/learn/articles/railroads-confederacy">unified rail road standards is cited as helping the north win the Civil War.</a> In the education industry we already have standards of communication. These were very helpful for their time and have created great education progress by todays standards they are all vague, subjective, and broad.
+            <br><br>
+            <ul>
+              <li>The letter grade</li>
+              <li>Standardized testing</li>
+              <li>GPA</li>
+              <li>The Unit/Credit (Semester in broad subjects)</li>
+              <li>Diploma/Major (Math, english, biological sciences)</li>
+            </ul>
+
+            <br><br>These are very inadequate for communicating the talents and knowledge of a student. Most of these were designed around or before the time of morse code, and honestly they probably give less information than morse code. Having a better standard of communication would allow us to go from Morse code to fiber optic communication in one jump.
+          </h4>
+        </div>
+      </div>
+
+      <div class="info" id="security">
+        <h3>Trust Security</h3>
+        <div class="infobar">
+          <h4>Trust is native to the system. While any one will be able to the lessons in the curriculum (?) only certain organizations will be able to verify that knowledge or skill is gained. The information will be on a distributed ledger allowing  </h4>
+        </div>
+      </div>
+      <button class="collapsible">Example: BlockChain</button>
+        <div class="content">
+          <p>Using blockchain technology will prevent this from being forgable or hackable<a href="https://www.youtube.com/watch?v=l4CZjTyLYG4" target="_blank">Blockchain explanation</a></p>
+        </div>
+
+      <div class="info" id="beginning">
+        <h3>The Map starts at the most basic level</h3>
+        <button class="collapsible">Definition</button>
+        <div class="content">
+          <p>Concept ID: 2.3.4213.7 <br>Name: The Pythagorean theorem <br>Definition: a^2 + b^2 = c^2….<br>Supporting concepts: 2.4.73846.7, 2.3.74738.8, 2.3.152.54…2.5.789.4 <br>Advancing concepts: 2.4.8023.34, 2.3.790.312, 4.8.73.289...6.7.1243.89 <br></p>
+        </div>
+        <div class="infobar">
+          <h4>Because the standard is focused on individual concepts students will not take tests with multiple concepts students and the algorithms will know exactly what the student needs to learn.  </h4>
+          <h4>The standard is made to be used gradually more on a quiz type scale and not a standardized test scale. This allows a tight feedback loop<a href="junk.html">.</a> </h4>
+        </div>
+      </div>
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+    }
+  </script>
+  </body>
+</html>
